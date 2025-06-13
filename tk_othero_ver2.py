@@ -15,7 +15,7 @@ class Application(tk.Frame):
         self.player = 0  # 0: 黒, 1: 白
         self.white_count = 2
         self.black_count = 2
-        self.game_over = False # ゲーム終了フラグを追加
+        self.game_over = False #ゲーム終了フラグ
 
         # create_widgetsが完了していることを確認してから盤面を操作
         if hasattr(self, 'buttons'):
@@ -222,7 +222,7 @@ class Application(tk.Frame):
         if self.player == 0:
             turn_text = "黒のターンです。"
         else:
-            turn_text = "黒のターンです。"
+            turn_text = "白のターンです。"
         self.turn_label["text"] = turn_text
     
     def judge(self):
